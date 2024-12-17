@@ -1,7 +1,12 @@
 body {
     margin: 0;
     background: linear-gradient(70deg, #8704bb, #190dbd, #0d6777);
-        font-size: 16px;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
 
     
 }
@@ -30,19 +35,57 @@ header ul{
     list-style: none;
 }
 header ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
     
 }
 
+.active{
+    background-color: #0a0463;
+    border-radius: 15px;
+}
+
 section{
-    background-color: rgb(9, 143, 81);
+    /* background-color: rgb(9, 143, 81); */
     padding: 15px;
     color: white;
     border: solid 1px black;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+    gap: 20px;
+
+}
+
+section p{
+    align-items: center ;
+    text-align: center;
+    padding: 1em;
+    border: 0.5px solid black;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
 }
 
 footer{
+    position:fixed;
     background-color: rgb(54, 54, 54);
     padding: 15px;
-    color: white;
+    color: rgb(107, 103, 103);
+    text-align: center;
+    width: 100%;
+    padding: 0.7em 0em;
+    bottom: 0%;
 
+
+}
+footer a {
+    text-decoration: none;
+    color: rgb(180, 174, 174);
 }
