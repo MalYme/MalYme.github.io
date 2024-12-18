@@ -87,8 +87,14 @@ header ul li{
     overflow: hidden;
     box-sizing: border-box; /* Inclut les bordures dans la taille */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Ajouter une légère ombre */
+    transition: transform 0.3s; /* Animation douce */
+
 
     
+}
+.card:hover {
+    transform: translateY(-10px); /* Soulève légèrement la carte */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Ombre plus prononcée */
 }
 @media (max-width: 768px) {
     .card {
