@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    background: linear-gradient(70deg, #8704bb, #190dbd, #0d6777);
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+
+    
+}
+.varela-regular {
+    font-family: "Varela", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+ 
+
+
+header{
+    display: flex;
+    background-color: rgb(54, 54, 54);
+    padding: 0px 15px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+header ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+.active{
+    background-color: #0a0463;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.inactive{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.container{ /* Conteneur principal */
+    /* background-color: rgb(9, 143, 81); */
+    padding: 15px;
+    color: white;
+    /* border: solid 1px black; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px; /* Marge extérieure */
+
+}
+
+.card{ /*card*/
+    align-items: center ;
+    text-align: center;
+    padding: 0px;
+    border: 0.5px solid black;
+    width: 40%;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box; /* Inclut les bordures dans la taille */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Ajouter une légère ombre */
+    transition: transform 0.3s; /* Animation douce */
+
+
+    
+}
+.card:hover {
+    transform: translateY(-10px); /* Soulève légèrement la carte */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Ombre plus prononcée */
+}
+@media (max-width: 768px) {
+    .card {
+      width: 100%; /* sur les écrans plus petits, chaque carte prend toute la largeur */
+    }
+  }
+.UP{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    height: 25%;
+    margin: 0px;
+    top: 0%;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+    background-color: black;
+    align-items: center; /* Centre verticalement */
+    justify-content: center;
+    font-size: 0.9em;
+
+}
+.UPtxt{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+
+    
+}
+
+
+.Down{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    height: 75%;
+    margin: 0px;
+    bottom: 0%;
+    position: absolute;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #14836d;
+    align-items: center; /* Centre verticalement */
+    justify-content: center;
+    word-wrap: break-word; /* Force le retour à la ligne */
+    box-sizing: border-box;
+
+}
+
+
+
+
+footer{
+    position:fixed;
+    background-color: rgb(54, 54, 54);
+    padding: 15px;
+    color: rgb(107, 103, 103);
+    text-align: center;
+    width: 100%;
+    padding: 0.7em 0em;
+    bottom: 0%;
+
+
+}
+footer a {
+    text-decoration: none;
+    color: rgb(180, 174, 174);
+}
